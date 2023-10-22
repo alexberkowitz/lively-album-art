@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+        background-image: url("res/background.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      #albumContainer{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity .5s linear;
+      }
+
+      #albumart {
+        border: solid 1px rgb(0 0 0 / 20%);
+        width: 640px;
+        height: 640px;
+        box-shadow: 3px 3px 18px rgba(0,0,0,.2);
+        border-radius: 16px;
+        z-index: 2;
+      }
+
+      #backgroundImage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -o-filter: blur(15px);
+        filter: blur(15px) brightness(40%);
+        object-fit: cover;
+        transform: scale(1.06); /* scale up to hide the edge blur */
+        width: 110%;
+        height: 110%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div id="albumContainer">
+      <img id="albumart" alt="" />
+      <img id="backgroundImage" />
+    </div>
+  </body>
+</html>

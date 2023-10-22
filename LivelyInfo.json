@@ -1,0 +1,17 @@
+{
+  "AppVersion": "1.0.0.0",
+  "Title": "Album Art",
+  "Thumbnail": "roa1541k.jpg",
+  "Preview": "txlls5dg.gif",
+  "Desc": "Simple wallpaper that displays art from the currently playing track. Based on a more complex wallpaper by rocksdanister.",
+  "Author": "alexberkowitz",
+  "License": "see license.txt",
+  "Contact": "https://github.com/alexberkowitz/lively-album-art",
+  "Type": 1,
+  "FileName": "index.html",
+  "Arguments": "--system-nowplaying --audio",
+  "IsAbsolutePath": false,
+  "Id": null,
+  "Tags": null,
+  "Version": 0
+}
