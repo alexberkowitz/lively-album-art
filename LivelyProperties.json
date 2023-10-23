@@ -11,9 +11,9 @@
     "text": "Album Corner Radius",
     "type": "slider",
     "min": 0,
-    "max": 100,
+    "max": 512,
     "step": 1,
-    "value": 5
+    "value": 20
   },
   "bgImage": {
     "text": "Background Image",
@@ -33,7 +33,7 @@
     "min": 0,
     "max": 1,
     "step": 0.1,
-    "value": 0.5
+    "value": 0.4
   },
   "bgBlur": {
     "text": "Background Album Art Blur",
@@ -41,6 +41,6 @@
     "min": 0,
     "max": 50,
     "step": 5,
-    "value": 15
+    "value": 20
   }
 }

@@ -39,7 +39,7 @@ function livelyPropertyListener(name, val) {
       break;
 
     case 'albumCornerRadius':
-      albumArt.css('border-radius', `${val}%`);
+      albumArt.css('border-radius', `${val}px`);
       break;
     
     case "bgImage":
