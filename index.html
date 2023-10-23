@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       *{
-        transition: all .3s ease;
+        transition: all .5s ease;
       }
 
       body {
@@ -38,7 +38,6 @@
         align-items: center;
         justify-content: center;
         background-color: black;
-        transition: opacity .5s linear;
         z-index: 2;
       }
 
@@ -57,6 +56,14 @@
         object-fit: cover;
         transform: scale(1.06); /* scale up to hide the edge blur */
         z-index: 1;
+      }
+
+      .disableDimEffect{
+        opacity: 1 !important;
+      }
+
+      .disableBlurEffect{
+        filter: blur(0px) !important;
       }
     </style>
     <script src="js/jquery.min.js"></script>

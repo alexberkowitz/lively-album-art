@@ -1,4 +1,9 @@
 {
+  "showAlbumArt": {
+    "text": "Show Centered Album Art",
+    "type": "checkbox",
+    "value": true
+  },
   "albumSize": {
     "text": "Album Size",
     "type": "slider",
@@ -15,6 +20,10 @@
     "step": 1,
     "value": 20
   },
+  "spacer1": {
+    "value": "",
+    "type": "label"
+  },
   "bgImage": {
     "text": "Background Image",
     "type": "folderDropdown",
@@ -22,13 +31,43 @@
     "filter": "*.jpg|*.png",
     "folder": "backgrounds"
   },
-  "useAlbumArtAsBg": {
-    "text": "Use Album Art As Background",
+  "dimBackgroundWhilePlaying": {
+    "text": "Dim Background While Playing",
     "type": "checkbox",
     "value": true
   },
+  "blurBackgroundWhilePlaying": {
+    "text": "Blur Background While Playing",
+    "type": "checkbox",
+    "value": true
+  },
+  "spacer2": {
+    "value": "",
+    "type": "label"
+  },
+  "showAlbumArtBg": {
+    "text": "Show Album Art Background While Playing",
+    "type": "checkbox",
+    "value": true
+  },
+  "spacer3": {
+    "value": "",
+    "type": "label"
+  },
+  "bgInfo1": {
+    "value": "Album art background will always take the following settings.",
+    "type": "label"
+  },
+  "bgInfo2": {
+    "value": "Normal background will only take them while media is playing,",
+    "type": "label"
+  },
+  "bgInfo3": {
+    "value": "and only if the relevant setting above is enabled.",
+    "type": "label"
+  },
   "bgBrightness": {
-    "text": "Background Album Art Brightness",
+    "text": "Background Brightness",
     "type": "slider",
     "min": 0,
     "max": 1,
@@ -36,7 +75,7 @@
     "value": 0.4
   },
   "bgBlur": {
-    "text": "Background Album Art Blur",
+    "text": "Background Blur",
     "type": "slider",
     "min": 0,
     "max": 50,
