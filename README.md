@@ -1,6 +1,4 @@
-# lively-album-art
-Simple album art wallpaper for Lively Wallpaper
+# Lively Wallpaper Album Art
+A simple album art wallpaper for Lively Wallpaper with basic customization options
 
 To install, download the latest release and drag the zip file into the Lively Wallpaper window.
-
-To change the fallback wallpaper that is displayed when there is nothing playing, open the wallpaper files and replace res/background.jpg (make sure the new file has the same name!).
