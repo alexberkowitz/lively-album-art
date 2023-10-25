@@ -1,5 +1,8 @@
+const foregroundContainer = $("#foregroundContainer");
 const albumContainer = $("#albumContainer");
 const albumArt = $("#albumArt");
+const track = $("#track");
+const artist = $("#artist");
 const albumBackgroundImage = $("#albumBackgroundImage");
 const backgroundImage = $("#backgroundImage");
 
@@ -20,6 +23,8 @@ function livelyCurrentTrack(data) {
   if (obj != null && obj.Thumbnail != null) {
     albumArt[0].src = "data:image/png;base64, " + obj.Thumbnail;
     albumBackgroundImage[0].src = "data:image/png;base64, " + obj.Thumbnail;
+    track[0].innerText = obj.Title;
+    artist[0].innerText = obj.Artist;
     handleIsPlaying(true);
   } else {
     handleIsPlaying(false);
@@ -29,7 +34,7 @@ function livelyCurrentTrack(data) {
 // Control visibility
 function handleIsPlaying(isPlaying) {
   if( isPlaying ){
-    albumContainer.css("opacity", 1);
+    foregroundContainer.css("opacity", 1);
 
     if( shouldDimBg ){
       backgroundImage.removeClass('disableDimEffect');
@@ -40,7 +45,7 @@ function handleIsPlaying(isPlaying) {
     }
 
   } else {
-    albumContainer.css("opacity", 0);
+    foregroundContainer.css("opacity", 0);
     backgroundImage.addClass('disableDimEffect');
     backgroundImage.addClass('disableBlurEffect');
   }
@@ -54,11 +59,37 @@ function livelyPropertyListener(name, val) {
       break;
 
     case 'albumSize':
-      albumArt.css('height', `${val}%`);
+      albumArt.css('height', `${val}vh`);
       break;
 
     case 'albumCornerRadius':
       albumArt.css('border-radius', `${val}px`);
+      break;
+    
+    case 'showTrackName':
+      track.css('display', val ? 'block' : 'none');
+      break;
+
+    case 'showArtistName':
+      artist.css('display', val ? 'block' : 'none');
+      break;
+    
+    case 'trackInfoAlignment':
+      const alignmentOptions = ['center', 'flex-start', 'flex-end'];
+      albumContainer.css('align-items', alignmentOptions[val]);
+      break;
+  
+    case 'trackInfoFont':
+      albumContainer.css('font-family', `${val}, sans-serif`);   
+      break;
+
+    case "trackInfoSize":
+      albumContainer.css('font-size', `${val}rem`);
+      break;
+
+    case "trackInfoBrightness":
+      track.css('opacity', val);
+      artist.css('opacity', val);
       break;
     
     case "bgImage":
@@ -83,7 +114,7 @@ function livelyPropertyListener(name, val) {
     
     case 'showAlbumArtBg':
       albumBackgroundImage.css('display', val ? 'block' : 'none');
-      albumContainer.css('background-color', val ? 'black' : 'transparent');
+      foregroundContainer.css('background-color', val ? 'black' : 'transparent');
       break;
 
     case "bgBrightness":

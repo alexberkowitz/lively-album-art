@@ -24,6 +24,51 @@
     "value": "",
     "type": "label"
   },
+  "showTrackName": {
+    "text": "Show Track Name",
+    "type": "checkbox",
+    "value": true
+  },
+  "showArtistName": {
+    "text": "Show Artist Name",
+    "type": "checkbox",
+    "value": true
+  },
+  "trackInfoAlignment": {
+    "text": "Track Info Alignment",
+    "type": "dropdown",
+    "value": 0,
+    "items": [
+      "Centered",
+      "Left",
+      "Right"
+    ]
+  },
+  "trackInfoFont": {
+    "text" : "Track Info Font",
+    "type" : "textbox",
+    "value" : "Segoe UI"
+  },
+  "trackInfoSize": {
+    "text": "Track Info Size",
+    "type": "slider",
+    "min": 1,
+    "max": 10,
+    "step": 0.25,
+    "value": 1.5
+  },
+  "trackInfoBrightness": {
+    "text": "Track Info Brightness",
+    "type": "slider",
+    "min": 0,
+    "max": 1,
+    "step": 0.1,
+    "value": 0.7
+  },
+  "spacer2": {
+    "value": "",
+    "type": "label"
+  },
   "bgImage": {
     "text": "Background Image",
     "type": "folderDropdown",
@@ -41,7 +86,7 @@
     "type": "checkbox",
     "value": true
   },
-  "spacer2": {
+  "spacer3": {
     "value": "",
     "type": "label"
   },
@@ -50,7 +95,7 @@
     "type": "checkbox",
     "value": true
   },
-  "spacer3": {
+  "spacer4": {
     "value": "",
     "type": "label"
   },
