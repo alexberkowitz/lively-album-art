@@ -1,8 +1,8 @@
 {
   "AppVersion": "1.0.0.0",
   "Title": "Album Art",
-  "Thumbnail": "roa1541k.jpg",
-  "Preview": "txlls5dg.gif",
+  "Thumbnail": "album-art.jpg",
+  "Preview": "album-art.jpg",
   "Desc": "Simple wallpaper that displays art from the currently playing track. Display can be customized.",
   "Author": "alexberkowitz",
   "License": "see license.txt",
